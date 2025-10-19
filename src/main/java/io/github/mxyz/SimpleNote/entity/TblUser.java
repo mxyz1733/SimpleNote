@@ -15,7 +15,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author mxyz
- * @since 2025-10-18
+ * @since 2025-10-19
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -34,8 +34,8 @@ public class TblUser implements Serializable {
     /**
      * 用户名
      */
-    @TableField("name")
-    private String name;
+    @TableField("username")
+    private String username;
 
     /**
      * 密码

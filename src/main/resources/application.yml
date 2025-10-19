@@ -1,9 +1,23 @@
 spring:
+  # 数据源
   datasource:
     url: jdbc:mysql://localhost:3306/simple_note?serverTimezone=UTC
     username: root
     password: MpopA452-AP_
     type: com.alibaba.druid.pool.DruidDataSource
+  # 邮件
+  mail:
+    host: smtp.qq.com # 邮箱服务器
+    port: 465 # 端口号
+    username: 3062317151@qq.com # 发送方邮箱
+    password: iuhzmpfsttvndfcd # 授权码
+    default-encoding: UTF-8 # 编码
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true # 启用 ssl
+# mybatis plus
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
